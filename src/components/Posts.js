@@ -59,7 +59,7 @@ const Posts = (props) => {
 											component="h2"
 											className={classes.postTitle}
 										>
-											{post.title.substr(0, 50)}...
+											{post.title.substr(0, 50)}
 										</Typography>
 										<div className={classes.postText}>
 											<Typography
@@ -67,7 +67,7 @@ const Posts = (props) => {
 												color="textPrimary"
 											></Typography>
 											<Typography variant="p" color="textSecondary">
-												{post.excerpt.substr(0, 60)}...
+												{post.excerpt.substr(0, 60)}
 											</Typography>
 										</div>
 									</CardContent>
