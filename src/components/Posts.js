@@ -49,8 +49,7 @@ const Posts = (props) => {
 								<Card className={classes.card}>
 									<CardMedia
 										className={classes.cardMedia}
-										image="https://source.unsplash.com/random"
-										title="Image title"
+										image={post.image}
 									/>
 									<CardContent className={classes.cardContent}>
 										<Typography
