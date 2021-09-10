@@ -7,11 +7,11 @@ import App from './App';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Hero from './components/Hero';
-import { createTheme } from '@material-ui/core/styles';
+import { createTheme, responsiveFontSizes } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
 import grey from '@material-ui/core/colors/grey';
 
-const THEME = createTheme({
+let THEME = createTheme({
 	typography: {
 	 "fontFamily": "Comic Sans MS",
 	 "fontSize": 14,
@@ -28,6 +28,7 @@ const THEME = createTheme({
 		},
 	  },
  });
+ THEME = responsiveFontSizes(THEME)
  
 const routing = (
 	<Router>
