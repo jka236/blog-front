@@ -4,28 +4,36 @@ import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import { makeStyles } from "@material-ui/core/styles";
+import Box from "@material-ui/core/Box";
+import Container from '@material-ui/core/Container';
 
 const useStyles = makeStyles((theme) => ({
   appBarTransparent: {
     backgroundColor: "rgba(255,255,255,0)",
     zIndex: 1,
-    display: "flex",
-    justifyContent: "space-between",
-    flexDirection: 'row',
     "& li:hover": {
       textDecoration: "underline",
     },
   },
   appBarColored: {
-    borderBottom: `1px solid ${theme.palette.divider}`,
+    // borderBottom: `1px solid ${theme.palette.divider}`,
     backgroundColor: "rgba(255,255,255)",
-    display: "flex",
-    flexDirection: 'row',
-    justifyContent: "space-between",
     "& li:hover": {
       textDecoration: "underline",
     },
+    elevation: 4
   },
+  container: {
+    paddingTop:"10px",
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "space-between",
+  },
+  rightToolBar:{
+    display: "flex",
+    flexDirection: "row",
+  },
+  
 }));
 
 function Header() {
@@ -59,26 +67,30 @@ function Header() {
         elevation={0}
         className={classes[navRef.current]}
       >
-        <Toolbar>
+        <Container maxWidth='lg' className={classes.container}> 
+        <Toolbar className={classes.leftToolBar}>
           <Typography variant="h7" color="inherit">
             Jonghyeok Kim
           </Typography>
         </Toolbar>
-        <Toolbar>
-          <Typography variant="h7" color="inherit">
-            ABOUT ME
-          </Typography>
-        </Toolbar>
-        <Toolbar>
-          <Typography variant="h7" color="inherit">
-            PORTFOLIO
-          </Typography>
-        </Toolbar>
-        <Toolbar>
-          <Typography variant="h7" color="inherit">
-            SKILLS
-          </Typography>
-        </Toolbar>
+        <Box className={classes.rightToolBar}>
+          <Toolbar>
+            <Typography variant="h7" color="inherit">
+              About Me
+            </Typography>
+          </Toolbar>
+          <Toolbar>
+            <Typography variant="h7" color="inherit">
+              Portfolio
+            </Typography>
+          </Toolbar>
+          <Toolbar>
+            <Typography variant="h7" color="inherit">
+              Skills
+            </Typography>
+          </Toolbar>
+        </Box>
+        </Container>
       </AppBar>
     </React.Fragment>
   );
