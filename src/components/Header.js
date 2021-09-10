@@ -8,6 +8,7 @@ import { makeStyles } from "@material-ui/core/styles";
 const useStyles = makeStyles((theme) => ({
   appBarTransparent: {
     backgroundColor: "rgba(255,255,255,0)",
+	zIndex: -1,
   },
   appBarColored: {
     borderBottom: `1px solid ${theme.palette.divider}`,
@@ -24,7 +25,7 @@ function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const show = window.scrollY > 10;
+      const show = window.scrollY > 1;
       if (show) {
         setNavBackground("appBarColored");
       } else {

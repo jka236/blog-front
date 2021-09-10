@@ -6,6 +6,7 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Card from "@material-ui/core/Card";
 import banner from "../assets/images/banner.jpg";
 import Box from "@material-ui/core/Box";
+import Header from './Header';
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -18,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
   heading: {
     padding: theme.spacing(5),
     position: "absolute",
-    top: theme.spacing(30),
+    top: theme.spacing(20),
     width: "100%",
     textAlign: "center",
     color: "black",
@@ -29,11 +30,11 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 510,
   },
   connectButton: {
-    padding: theme.spacing(10),
+    paddingTop: theme.spacing(10),
   },
 }));
 
-function Header() {
+function Hero() {
   const classes = useStyles();
   return (
     <React.Fragment>
@@ -67,4 +68,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default Hero;
