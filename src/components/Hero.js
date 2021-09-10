@@ -2,11 +2,9 @@ import React from "react";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
-import CardMedia from "@material-ui/core/CardMedia";
-import Card from "@material-ui/core/Card";
-import banner from "../assets/images/banner.jpg";
 import Box from "@material-ui/core/Box";
-import Header from './Header';
+import heroBG from '../assets/images/banner.jpg'
+import classnames from 'classnames'
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -15,15 +13,16 @@ const useStyles = makeStyles((theme) => ({
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
+    background: `url(${heroBG}) no-repeat center center`
   },
   heading: {
-    padding: theme.spacing(5),
-    position: "absolute",
-    top: theme.spacing(20),
-    width: "100%",
-    textAlign: "center",
-    color: "black",
-    backgroundColor: "none",
+    textAlign: 'center',
+    display: 'flex',
+    flexDirection: 'column',
+    padding: 20,
+    paddingTop: 50,
+    justifyContent: 'center',
+    height: '100%',
   },
   bold: {
     paddingBottom: theme.spacing(3),
@@ -38,18 +37,10 @@ function Hero() {
   const classes = useStyles();
   return (
     <React.Fragment>
-      <Box>
-        <Card>
-          <CardMedia
-            component="img"
-            alt="Contemplative Reptile"
-            height="100%"
-            image={banner}
-            className={classes.container}
-          />
+      <Box className={classnames('portfolio-hero', classes.container)}>
           <Box className={classes.heading}>
             <Typography variant="h6">Hi, I'm Jonghyeok</Typography>
-            <Typography variant="h3" className={classes.bold}>Data-Driven Software Developer</Typography>
+            <Typography variant="h3" className={classes.bold}>Data-Driven Full Stack Developer</Typography>
             <Typography variant="h6">
               Lorem Ipsum is simply dummy text of the printing and typesetting
             </Typography>
@@ -62,7 +53,6 @@ function Hero() {
               </Button>
             </Typography>
           </Box>
-        </Card>
       </Box>
     </React.Fragment>
   );
