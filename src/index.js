@@ -26,8 +26,11 @@ let THEME = createTheme({
 		  main: grey[800],
 		},
 		secondary: {
-		  main: grey[400],
+		  main: "#3E3D53",
 		},
+		textSecondary: {
+			main: "#3E3D53"
+		}
 	  },
  });
  THEME = responsiveFontSizes(THEME)
@@ -40,7 +43,7 @@ const routing = (
 			<Hero />
 			<Switch>
 				<Route exact path="/" component={App} />
-				<Route exact path="/about" component={About} />
+				<Route exact path="/" component={About} />
 			</Switch>
 			<Skills />
 			<About />

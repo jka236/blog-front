@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from 'react';
-import './App.css';
-import Posts from './components/Posts';
-import PostLoadingComponent from './components/PostLoading';
+import React, { useEffect, useState } from "react";
+import "./App.css";
+import Posts from "./components/Posts";
+import PostLoadingComponent from "./components/PostLoading";
+import Typography from "@material-ui/core/Typography";
 
-function App(){
+function App() {
   const PostLoading = PostLoadingComponent(Posts);
   const [appState, setAppState] = useState({
     loading: false,
@@ -17,11 +18,18 @@ function App(){
       .then((data) => data.json())
       .then((posts) => {
         setAppState({ loading: false, posts: posts });
-      })
+      });
   }, [setAppState]);
-  return(
+  return (
     <div className="App">
-      <h1>Work</h1>
+      <Typography
+        Typography
+        variant="h3"
+        align="center"
+        style={{ padding: "30px", fontWeight: 500 }}
+      >
+        Work
+      </Typography>
       <PostLoading isLoading={appState.loading} posts={appState.posts} />
     </div>
   );

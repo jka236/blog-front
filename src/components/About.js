@@ -6,19 +6,20 @@ import { Container } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   container: {
-    paddingTop: "10%",
+    padding: "50px 0 50px 0",
   },
   grid: {
     display: "flex",
     flexDirection: "column",
   },
-  connectButton: {
-    paddingTop: "5%",
-  },
   image: {
-    height: "500px",
-    width: "400px",
-    objectFit: 'cover',
+    height: "300px",
+    width: "300px",
+    objectFit: "cover",
+    "@media (min-width: 1024px)": {
+      width: "500px",
+      height: "500px",
+    },
   },
 }));
 
@@ -26,6 +27,7 @@ function About() {
   const classes = useStyles();
   return (
     <React.Fragment>
+      <div style={{backgroundColor: "#eeeeee"}}>
       <Container className={classes.container}>
         <Grid
           container
@@ -48,10 +50,10 @@ function About() {
             direction="column"
             lg={6}
           >
-            <Typography variant="h3" style={{ paddingBottom: "2%" }}>
+            <Typography variant="h3" align="center" style={{ paddingBottom: "2%" }}>
               About Me
             </Typography>
-            <Typography variant="body1">
+            <Typography variant="body1" style={{ padding: "0 5% 5% 5%" }}>
               Idempotence is the property of certain operations in mathematics
               and computer science whereby they can be applied multiple times
               without changing the result beyond the initial application. The
@@ -61,6 +63,7 @@ function About() {
           </Grid>
         </Grid>
       </Container>
+      </div>
     </React.Fragment>
   );
 }
