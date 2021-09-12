@@ -21,10 +21,8 @@ const useStyles = makeStyles((theme) => ({
     "& li:hover": {
       textDecoration: "underline",
     },
-    elevation: 4
   },
   container: {
-    paddingTop:"10px",
     display: "flex",
     flexDirection: "row",
     justifyContent: "space-between",
@@ -82,11 +80,6 @@ function Header() {
           <Toolbar>
             <Typography variant="h7" color="inherit">
               Portfolio
-            </Typography>
-          </Toolbar>
-          <Toolbar>
-            <Typography variant="h7" color="inherit">
-              Skills
             </Typography>
           </Toolbar>
         </Box>

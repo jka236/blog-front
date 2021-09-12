@@ -7,6 +7,8 @@ import App from './App';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Hero from './components/Hero';
+import About from './components/About';
+import Skills from './components/Skills';
 import { createTheme, responsiveFontSizes } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
 import grey from '@material-ui/core/colors/grey';
@@ -38,7 +40,10 @@ const routing = (
 			<Hero />
 			<Switch>
 				<Route exact path="/" component={App} />
+				<Route exact path="/about" component={About} />
 			</Switch>
+			<Skills />
+			<About />
 			<Footer />
 		</React.StrictMode>
 		</ThemeProvider>
