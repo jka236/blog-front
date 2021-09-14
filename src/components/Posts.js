@@ -31,6 +31,15 @@ const useStyles = makeStyles((theme) => ({
 		fontSize: '12px',
 		textAlign: 'left',
 		marginBottom: theme.spacing(2),
+		marginTop: "6%",
+	},
+	postTech: {
+		display: 'flex',
+		justifyContent: 'left',
+		alignItems: 'baseline',
+		fontSize: '12px',
+		textAlign: 'left',
+		marginBottom: theme.spacing(2),
 	},
 }));
 
@@ -40,12 +49,12 @@ const Posts = (props) => {
 	if (!posts || posts.length === 0) return <p>Can not find any posts, sorry</p>;
 	return (
 		<React.Fragment>
-			<Container maxWidth="md" component="main">
-				<Grid container spacing={5} alignItems="flex-end">
+			<Container maxWidth="lg" component="main" style={{ paddingBottom: "5%"}}>
+				<Grid container spacing={7} alignItems="flex-end">
 					{posts.map((post) => {
 						return (
 							// Enterprise card is full width at sm breakpoint
-							<Grid item key={post.id} xs={12} md={4}>
+							<Grid item key={post.id} xs={12} md={6}>
 								<Card className={classes.card}>
 									<CardMedia
 										className={classes.cardMedia}
@@ -54,19 +63,19 @@ const Posts = (props) => {
 									<CardContent className={classes.cardContent}>
 										<Typography
 											gutterBottom
-											variant="h6"
-											component="h2"
-											className={classes.postTitle}
+											variant="h4"
+											align="left"
 										>
 											{post.title.substr(0, 50)}
 										</Typography>
 										<div className={classes.postText}>
-											<Typography
-												component="p"
-												color="textPrimary"
-											></Typography>
-											<Typography variant="p" color="textSecondary">
+											<Typography variant="body1">
 												{post.excerpt.substr(0, 60)}
+											</Typography>
+										</div>
+										<div className={classes.postTech}>
+											<Typography variant="p">
+												{post.content}
 											</Typography>
 										</div>
 									</CardContent>

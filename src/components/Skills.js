@@ -9,7 +9,7 @@ import webapp from "../assets/images/webapp.png";
 
 const useStyles = makeStyles((theme) => ({
   container: {
-    paddingTop: "10%",
+    paddingTop: "5%",
   },
   grid: {
     display: "flex",

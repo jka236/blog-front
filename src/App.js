@@ -13,7 +13,9 @@ function App() {
 
   useEffect(() => {
     setAppState({ loading: true });
-    const apiUrl = `https://jonghyeokblog.herokuapp.com/api`;
+    // const apiUrl = `https://jonghyeokblog.herokuapp.com/api`;
+    const apiUrl = `http://127.0.0.1:8000/api`;
+
     fetch(apiUrl)
       .then((data) => data.json())
       .then((posts) => {
@@ -26,7 +28,7 @@ function App() {
         Typography
         variant="h3"
         align="center"
-        style={{ padding: "30px", fontWeight: 500 }}
+        style={{ padding: "50px", fontWeight: 500 }}
       >
         Work
       </Typography>

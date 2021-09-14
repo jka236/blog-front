@@ -16,7 +16,6 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   appBarColored: {
-    // borderBottom: `1px solid ${theme.palette.divider}`,
     backgroundColor: "rgba(255,255,255)",
     "& li:hover": {
       textDecoration: "underline",

@@ -41,12 +41,13 @@ const routing = (
 		<React.StrictMode>
 			<Header />
 			<Hero />
+			<About />
 			<Switch>
 				<Route exact path="/" component={App} />
 				<Route exact path="/" component={About} />
 			</Switch>
+			
 			<Skills />
-			<About />
 			<Footer />
 		</React.StrictMode>
 		</ThemeProvider>

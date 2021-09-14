@@ -6,7 +6,7 @@ import { Container } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   container: {
-    padding: "50px 0 50px 0",
+    padding: "90px 0 50px 0",
   },
   grid: {
     display: "flex",
@@ -27,7 +27,7 @@ function About() {
   const classes = useStyles();
   return (
     <React.Fragment>
-      <div style={{backgroundColor: "#eeeeee"}}>
+      {/* <div style={{backgroundColor: "#eeeeee"}}> */}
       <Container className={classes.container}>
         <Grid
           container
@@ -64,7 +64,7 @@ function About() {
           </Grid>
         </Grid>
       </Container>
-      </div>
+      {/* </div> */}
     </React.Fragment>
   );
 }
