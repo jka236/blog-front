@@ -38,7 +38,8 @@ function About() {
         >
           <Grid item>
             <img
-              src="https://res.cloudinary.com/dypjcgzgt/image/upload/v1631654766/KakaoTalk_20210914_130642167_syjtnz.jpg"
+              // src="https://res.cloudinary.com/dypjcgzgt/image/upload/v1631654766/KakaoTalk_20210914_130642167_syjtnz.jpg"
+              src="https://res.cloudinary.com/dypjcgzgt/image/upload/v1631654766/KakaoTalk_20210914_130643394_yyd0qe.jpg"
               alt=""
               className={classes.image}
             />
