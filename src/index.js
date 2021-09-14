@@ -15,7 +15,7 @@ import grey from '@material-ui/core/colors/grey';
 
 let THEME = createTheme({
 	typography: {
-	 "fontFamily": "Comic Sans MS",
+	 "fontFamily": "TitilliumWeb",
 	 "fontSize": 14,
 	 "fontWeightLight": 300,
 	 "fontWeightRegular": 400,

@@ -13,12 +13,12 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
   },
   image: {
-    height: "300px",
+    height: "400px",
     width: "300px",
     objectFit: "cover",
     "@media (min-width: 1024px)": {
       width: "500px",
-      height: "500px",
+      height: "600px",
     },
   },
 }));
@@ -38,7 +38,7 @@ function About() {
         >
           <Grid item>
             <img
-              src="https://images.unsplash.com/photo-1481437642641-2f0ae875f836?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+              src="https://res.cloudinary.com/dypjcgzgt/image/upload/v1631654766/KakaoTalk_20210914_130642167_syjtnz.jpg"
               alt=""
               className={classes.image}
             />
