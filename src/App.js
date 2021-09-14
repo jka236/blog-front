@@ -13,8 +13,8 @@ function App() {
 
   useEffect(() => {
     setAppState({ loading: true });
-    // const apiUrl = `https://jonghyeokblog.herokuapp.com/api`;
-    const apiUrl = `http://127.0.0.1:8000/api`;
+    const apiUrl = `https://jonghyeokblog.herokuapp.com/api`;
+    // const apiUrl = `http://127.0.0.1:8000/api`;
 
     fetch(apiUrl)
       .then((data) => data.json())
