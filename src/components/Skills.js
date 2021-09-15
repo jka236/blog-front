@@ -53,42 +53,44 @@ function Skills() {
   const classes = useStyles();
   return (
     <React.Fragment>
-      <Container maxWidth="xl" className={classes.container}>
-        <Typography
-          variant="h3"
-          align="center"
-          style={{ paddingBottom: "50px", fontWeight: 500 }}
-        >
-          Interest and Skills
-        </Typography>
-        <Grid
-          container
-          justifyContent="center"
-          alignItems="center"
-          direction="row"
-          spacing={1}
-        >
-          {interests.map((inter) => (
-            <Grid item lg={3}>
-              <img src={inter.logo} alt="" className={classes.image} />
-              <Typography
-                variant="h4"
-                align="center"
-                style={{ paddingBottom: "2%" }}
-              >
-                {inter.title}
-              </Typography>
-              <Typography
-                variant="body1"
-                align="center"
-                style={{ padding: "3% 15% 10% 15%" }}
-              >
-                {inter.description}
-              </Typography>
-            </Grid>
-          ))}
-        </Grid>
-      </Container>
+      <div id="skills">
+        <Container maxWidth="xl" className={classes.container}>
+          <Typography
+            variant="h3"
+            align="center"
+            style={{ paddingBottom: "50px", fontWeight: 500 }}
+          >
+            Interest and Skills
+          </Typography>
+          <Grid
+            container
+            justifyContent="center"
+            alignItems="center"
+            direction="row"
+            spacing={1}
+          >
+            {interests.map((inter) => (
+              <Grid item lg={3}>
+                <img src={inter.logo} alt="" className={classes.image} />
+                <Typography
+                  variant="h4"
+                  align="center"
+                  style={{ paddingBottom: "2%" }}
+                >
+                  {inter.title}
+                </Typography>
+                <Typography
+                  variant="body1"
+                  align="center"
+                  style={{ padding: "3% 15% 10% 15%" }}
+                >
+                  {inter.description}
+                </Typography>
+              </Grid>
+            ))}
+          </Grid>
+        </Container>
+      </div>
     </React.Fragment>
   );
 }

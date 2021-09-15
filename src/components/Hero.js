@@ -34,7 +34,9 @@ const useStyles = makeStyles((theme) => ({
 function Hero() {
   const classes = useStyles();
   return (
+    <div id="h">
     <React.Fragment>
+      
       <Grid
         container
         justifyContent="center"
@@ -53,6 +55,7 @@ function Hero() {
             <Button
               variant="outlined"
               href="https://www.linkedin.com/in/jonghyeok-kim-412b59200/"
+              target="_blank"
             >
               CONNECT WITH ME
             </Button>
@@ -60,6 +63,8 @@ function Hero() {
         </Grid>
       </Grid>
     </React.Fragment>
+    </div>
+
   );
 }
 

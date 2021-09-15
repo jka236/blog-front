@@ -28,9 +28,9 @@ function App() {
         Typography
         variant="h3"
         align="center"
-        style={{ padding: "50px", fontWeight: 500 }}
+        style={{ padding: "5%", fontWeight: 500 }}
       >
-        Work
+        Portfolio
       </Typography>
       <PostLoading isLoading={appState.loading} posts={appState.posts} />
     </div>

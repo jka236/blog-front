@@ -36,6 +36,7 @@ let THEME = createTheme({
  THEME = responsiveFontSizes(THEME)
  
 const routing = (
+	<div id="hero">
 	<Router>
 		<ThemeProvider theme={THEME}>
 		<React.StrictMode>
@@ -44,14 +45,13 @@ const routing = (
 			<About />
 			<Switch>
 				<Route exact path="/" component={App} />
-				<Route exact path="/" component={About} />
 			</Switch>
-			
 			<Skills />
 			<Footer />
 		</React.StrictMode>
 		</ThemeProvider>
 	</Router>
+	</div>
 );
 
 ReactDOM.render(routing, document.getElementById('root'));
