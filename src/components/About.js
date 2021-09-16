@@ -28,42 +28,43 @@ function About() {
   return (
     <React.Fragment>
       <div id="aboutme">
-      <Container className={classes.container}>
-        <Grid
-          container
-          justifyContent="center"
-          alignItems="center"
-          direction="row"
-          spacing={0}
-        >
-          <Grid item> 
-            <img
-              // src="https://res.cloudinary.com/dypjcgzgt/image/upload/v1631654766/KakaoTalk_20210914_130642167_syjtnz.jpg"
-              src="https://res.cloudinary.com/dypjcgzgt/image/upload/v1631654766/KakaoTalk_20210914_130643394_yyd0qe.jpg"
-              alt=""
-              className={classes.image}
-            />
-          </Grid>
+        <Container className={classes.container}>
           <Grid
-            item
+            container
             justifyContent="center"
             alignItems="center"
-            direction="column"
-            lg={6}
+            direction="row"
+            spacing={0}
           >
-            <Typography variant="h3" align="center" style={{ padding: "5%" }}>
-              About Me
-            </Typography>
-            <Typography variant="body1" style={{ padding: "0 8% 0% 8%" }}>
-              Idempotence is the property of certain operations in mathematics
-              and computer science whereby they can be applied multiple times
-              without changing the result beyond the initial application. The
-              concept of idempotence arises in a number of places in abstract
-              algebra and functional programmin
-            </Typography>
+            <Grid item>
+              <img
+                // src="https://res.cloudinary.com/dypjcgzgt/image/upload/v1631654766/KakaoTalk_20210914_130642167_syjtnz.jpg"
+                src="https://res.cloudinary.com/dypjcgzgt/image/upload/v1631654766/KakaoTalk_20210914_130643394_yyd0qe.jpg"
+                alt=""
+                className={classes.image}
+              />
+            </Grid>
+            <Grid
+              item
+              justifyContent="center"
+              alignItems="center"
+              direction="column"
+              lg={6}
+            >
+              <Typography variant="h3" align="center" style={{ padding: "5%" }}>
+                About Me
+              </Typography>
+              <Typography variant="body1" style={{ padding: "0 8% 0% 8%" }}>
+                I am a passionate and hardworking Data Science student at Simon
+                Fraser University. I love working with quantitative data and
+                turning them into a meaningful conclusion. 
+                <br/><br/>
+                #DataScience #DataEngineer #Full-Stack #Statistics #Economics #Finance
+                #Python #JavaScript #R
+              </Typography>
+            </Grid>
           </Grid>
-        </Grid>
-      </Container>
+        </Container>
       </div>
     </React.Fragment>
   );
