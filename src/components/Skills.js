@@ -33,19 +33,19 @@ const interests = [
     logo: dataScience,
     title: "Data Science",
     description:
-      "something  changing the result beyond the initial application.  changing the result beyond the initial application.",
+      "Having majored in Data Science, I have learned the foundation of Machine Learning and statistical analysis. I am experienced in data cleaning using Python and R.",
   },
   {
     logo: webapp,
     title: "Web Development",
     description:
-      "something  changing the result beyond the initial application.  changing the result beyond the initial application.",
+      "I have gained sufficient programming skills by doing practical projects including developing an official website for Vancouver Korean Developer & Designer.",
   },
   {
     logo: econ,
     title: "Economics",
     description:
-      "something  changing the result beyond the initial application.  changing the result beyond the initial application.",
+      "I am passionate about Economics and Finance. I have a Bachelor's degree in Economics and worked in the insurance industry as a HR Specialist.",
   },
 ];
 
