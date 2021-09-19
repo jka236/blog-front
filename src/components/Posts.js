@@ -50,11 +50,11 @@ const Posts = (props) => {
   return (
     <React.Fragment>
       <Container maxWidth="lg" component="main" style={{ paddingBottom: "5%" }}>
-        <Grid container spacing={7} alignItems="flex-end">
+        <Grid container spacing={3} alignItems="center" justifyContent="center">
           {posts.map((post) => {
             return (
               // Enterprise card is full width at sm breakpoint
-              <Grid item key={post.id} xs={12} md={6}>
+              <Grid item key={post.id} xs={11} md={6}>
                 <Card className={classes.card}>
                   <a href={post.link} target="_black">
                     <CardMedia
