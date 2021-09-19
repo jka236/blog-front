@@ -56,7 +56,7 @@ const Posts = (props) => {
               // Enterprise card is full width at sm breakpoint
               <Grid item key={post.id} xs={12} md={6}>
                 <Card className={classes.card}>
-                  <a href={post.link} target="_blank">
+                  <a href={post.link} target="_black">
                     <CardMedia
                       className={classes.cardMedia}
                       image={post.image}
