@@ -68,7 +68,7 @@ const Posts = (props) => {
                     </Typography>
                     <div className={classes.postText}>
                       <Typography variant="body1">
-                        {post.excerpt.substr(0, 60)}
+                        {post.excerpt}
                       </Typography>
                     </div>
                     <div className={classes.postTech}>
